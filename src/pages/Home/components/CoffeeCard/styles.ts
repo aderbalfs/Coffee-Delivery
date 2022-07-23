@@ -34,6 +34,7 @@ export const Tags = styled.div`
     background: ${({ theme }) => theme.colors["brand-yellow-light"]};
     color: ${({ theme }) => theme.colors["brand-yellow-dark"]};
     font-size: ${({ theme }) => theme.textSizes["components-tag"]};
+    user-select: none;
     text-transform: uppercase;
     padding: 0.25rem 0.5rem;
     border-radius: 9999px;
