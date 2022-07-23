@@ -3,7 +3,7 @@ import { coffees } from "../../../../target/coffees";
 import { CoffeeCard } from "../CoffeeCard";
 import { CoffeeList, OurCoffeeContainer } from "./styles";
 
-export function OurCoffee() {
+export function OurCoffees() {
   return (
     <OurCoffeeContainer className="container">
       <TitleText size="l" color="subtitle">
@@ -11,11 +11,10 @@ export function OurCoffee() {
       </TitleText>
 
       <CoffeeList>
-        {coffees.map(coffee => (
-        <CoffeeCard key={coffee.id} coffee={coffee}/>
-        ) )} 
+        {coffees.map((coffee) => (
+          <CoffeeCard key={coffee.id} coffee={coffee} />
+        ))}
       </CoffeeList>
-
     </OurCoffeeContainer>
-  )
+  );
 }
